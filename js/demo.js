@@ -22,8 +22,8 @@
 
         // create points
         points = [];
-        for(var x = 0; x < width; x = x + width/20) {
-            for(var y = 0; y < height; y = y + height/20) {
+        for(var x = 0; x < width; x = x + width/15) {
+            for(var y = 0; y < height; y = y + height/15) {
                 var px = x + Math.random()*width/20;
                 var py = y + Math.random()*height/20;
                 var p = {x: px, originX: px, y: py, originY: py };
@@ -39,7 +39,7 @@
                 var p2 = points[j]
                 if(!(p1 == p2)) {
                     var placed = false;
-                    for(var k = 0; k < 5; k++) {
+                    for(var k = 0; k < 4; k++) {
                         if(!placed) {
                             if(closest[k] == undefined) {
                                 closest[k] = p2;
@@ -48,7 +48,7 @@
                         }
                     }
 
-                    for(var k = 0; k < 5; k++) {
+                    for(var k = 0; k < 4; k++) {
                         if(!placed) {
                             if(getDistance(p1, p2) < getDistance(p1, closest[k])) {
                                 closest[k] = p2;

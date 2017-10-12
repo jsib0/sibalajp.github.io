@@ -38,11 +38,17 @@
 
 .head-info a {
     display: block;
-    color: black;
+    text-align: center;
+    color: #000000;
+    outline: 1px solid red;
+    width: 100%;
+    
 }
 
 .head-info a:hover{
     color: #808080;
+    
+
 }
 
 .container {

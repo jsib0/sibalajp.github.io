@@ -18,22 +18,13 @@
 	box-sizing: border-box;
 }
 
-html {
-	overflow: hidden;
-}
-
 body,
 html {
 	font-size: 100%;
 	margin: 0;
 	padding: 0;
 	min-height: 100% !important;
-	
 }
-
-
-
-
 
 /* Helper classes */
 .cf:before,

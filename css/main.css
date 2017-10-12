@@ -19,9 +19,8 @@
     z-index: -1;  
 }
 
- .large-header {
+.large-header {
     background-image: url('../images/demo-1-bg.jpg');
-
 }
 
 .profile-pic {
@@ -45,21 +44,24 @@
     margin-top: 90px;
 }
 
-.head-info a {
-    display: block;
+.head-info ul  {  
+    margin: 0;
+    padding: 0;
     text-align: center;
-    color: #000000;
-    width: 100%;
+    list-style: none;
+}
 
+.head-info ul li  {
+    padding: 2px 5px;
+}
+
+.head-info a {
+  color: #000000;
 }
 
 .head-info a:hover{
     color: #808080;
-    
-
 }
-
-
 
 .noscroll .container {
     overflow-y: hidden;

@@ -1,19 +1,20 @@
 
-
 .large-header {
     position: relative;
     width: 100%;
-    height: 20%;
+    height: 300px;
     background: #333;
     overflow: hidden;
     background-size: cover;
     background-position: center center;
     z-index: 1;
+    outline: 1px solid red;
   
 }
 
  .large-header {
     background-image: url('../images/demo-1-bg.jpg');
+
 }
 
 .profile-pic {
@@ -59,6 +60,12 @@
     overflow-y: hidden;
 }
 
+.gallery_head {
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
 .slider {
     position: relative;
     z-index: 200;
@@ -73,7 +80,6 @@
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     margin-top: 130px;
-    /*outline: 2px solid red;*/
 }
 
 .slide {
@@ -82,7 +88,6 @@
     visibility: hidden;
     width: 100%;
     opacity: 0;
-    /*outline: 10px solid red;*/
 }
 
 .slide--current {
@@ -202,10 +207,17 @@
     outline: none;
 }
 
+.zoomer__area--size-1 {
+    /* iPhone */
+    width: 632px;
+    height: 358px;
+}
+
 .zoomer__area--size-2 {
     /* iPhone */
     width: 632px;
     height: 358px;
+    outline: 1px solid red;
 }
 
 .preview {

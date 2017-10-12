@@ -5,9 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="./fonts/feather/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="./css/component.css"> -->
 	<link rel="stylesheet" type="text/css" href="./css/demo.css">
-	
+	<script src="./js/modernizr.custom.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -23,40 +22,60 @@
 			<a href="./images/jon_sibala_resume.pdf">Resume</a>
 			<p>Phone: (818) 731-1033 <br> Email: sibalajp@gmail.com</p>
 		</div>
+		<div class="gallery_head">
+			<h2>Gallery</h2>
+		</div>
 		<section class="slider">
-				<h2>Gallery</h2>
-				<div class="slide slide--current" data-content="content-1">
+			<div class="slide slide--current" data-content="content-1">
 				<div class="slide__mover">
 					<div class="zoomer flex-center">
-						<img class="zoomer__image" src="./images/iphone.png" alt="iPhone" />
+						<img class="zoomer__image" src="./images/blue_monkey_bar.png" alt="Gastropub" />
 						<div class="preview">
-								<img src="./images/blue_monkey_bar.png" alt="Blue Monkey Grill Preview" />
-								<div class="zoomer__area zoomer__area--size-2"></div>	
-							</div>
+							<img src="./images/blue_monkey_bar.png" alt="Blue Monkey Grill Preview" />
+							<div class="zoomer__area zoomer__area--size-1"></div>	
 						</div>
 					</div>
-					<h2 class="slide__title"><span>Gastropub</span> Blue Monkey Grill</h2>
+				</div>
+				<h2 class="slide__title"><span>Gastropub</span> Blue Monkey Grill</h2>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="./images/soundhub.png" alt="SoundHub" />
+						<div class="preview">
+							<img src="./images/soundhub.png" alt="SoundHub preview" />
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>MUSIC APP</span> SounHub</h2>
 				</div>
 				<nav class="slider__nav">
 					<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
 					<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
 					<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
 				</nav>
-			</section>
-			<section class="content">
-				<div class="content__item" id="content-1">
-					<img class="content__item-img rounded-right" src="./images/blue_monkey_bar.png" alt="Apple Watch Content" />
-					<div class="content__item-inner">
-						<h2>Blue Monkey Grill</h2>
-						<!-- <h3>Incredible performance for powerful apps</h3> -->
-						<p>Angular 4 based project that was inspired from a desire to increase my knowledge in working with Angular 4, jQuery, css-based animations, and responsive design. </p>
-						<a href="http://54.191.254.247/">Checkout website &xrarr;</a>
-					</div>
+		</section>
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right" src="./images/blue_monkey_bar.png" alt="Blue Monkey Content" />
+				<div class="content__item-inner">
+					<h2>Blue Monkey Grill</h2>
+					<p>Angular 4 based project that was inspired from a desire to increase my knowledge in working with Angular 4, jQuery, css-based animations, and responsive design. </p>
+					<p><a href="http://54.191.254.247/">Checkout website &xrarr;</a></p>
 				</div>
-				<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right" src="./images/soundhub.png" alt="Soundhub Content" />
+				<div class="content__item-inner">
+					<h2>SoundHub</h2>
+					<p>A replica of music apps such as Spotify and Pandora, SoundHub is capable of searching, playing and adding personal favorites onto user profile. Technologies used: Ruby on Rails, Spotify API, PostgresSQL. *Group project</p>
+					<p><a href="https://github.com/ISAACLA/Soundhub.git">Review code on GitHub &xrarr;</a></p>
+				</div>
+			</div>
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
 		</section>
 	</div> <!-- container  -->  
-	<script src="./js/modernizr.custom.js"></script>
 	<script src="./js/TweenLite.min.js"></script>
 	<script src="./js/EasePack.min.js"></script>
 	<script src="./js/demo.js"></script>
@@ -64,5 +83,6 @@
 	<script src="./js/classie.js"></script>
 	<script src="./js/dynamics.min.js"></script>
 	<script src="./js/main.js"></script>
+	
 </body>
 </html>

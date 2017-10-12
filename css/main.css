@@ -40,9 +40,8 @@
     display: block;
     text-align: center;
     color: #000000;
-    outline: 1px solid red;
     width: 100%;
-    
+
 }
 
 .head-info a:hover{

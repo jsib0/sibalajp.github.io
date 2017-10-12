@@ -9,11 +9,11 @@
 
     function initHeader() {
         width = window.innerWidth;
-        height = 18.750;
+        height = 300;
         target = {x: width/2, y: height/2};
 
         largeHeader = document.getElementById('large-header');
-        largeHeader.style.height = height+'em';
+        largeHeader.style.height = height+'px';
 
         canvas = document.getElementById('demo-canvas'); // HTMLCanvasElement.getContext() - this method returns a drawing context on the canvas
         canvas.width = width; 
@@ -98,8 +98,8 @@
 
     function resize() {
         width = window.innerWidth;
-        height = 18.750;
-        largeHeader.style.height = height +'em';
+        height = 300;
+        largeHeader.style.height = height +'px';
         canvas.width = width;
         canvas.height = height;
     }

@@ -452,4 +452,20 @@
         font-size: 82%;
         padding: 4em 3em 2em;
     }
+
+    img {
+        width: 300px;
+    }
+
+    .slide__title {
+        font-size: 1.3em;
+    }
+
+    .slide__title span {
+        font-size: 55%;
+    }
+
+    .zoomer {
+        height: 150px;
+    }
 }

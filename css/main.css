@@ -106,7 +106,7 @@
 
 .slide__mover {
     position: relative;
-    z-index: 100;   
+    z-index: 100;
 }
 
 .slide__title {
@@ -134,13 +134,13 @@
 
 .button {
     font-size: 1.31em;
-    color: #4b5f5a;
     position: relative;
     display: inline-block;
     overflow: hidden;
     margin: 0 25px;
     padding: 0;
     cursor: pointer;
+    color: #5c5edc;
     border: none;
     background: none;
 }
@@ -150,7 +150,7 @@
 }
 
 .button:hover {
-    color: #000080; 
+    color: #fff;
 }
 
 .text-hidden {
@@ -189,7 +189,7 @@
     align-items: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;  
+    justify-content: center;
 }
 
 .zoomer__image {
@@ -214,16 +214,18 @@
 }
 
 .zoomer__area--size-1 {
-    /* iPhone */
     width: 632px;
     height: 358px;
 }
 
 .zoomer__area--size-2 {
-    /* iPhone */
     width: 632px;
     height: 358px;
-    outline: 1px solid red;
+}
+
+.zoomer__area--size-3 {
+    width: 200px;
+    height: 200px;
 }
 
 .preview {
@@ -243,6 +245,14 @@
     transform: translate3d(100%,0,0);
 }
 
+.rounded {
+    /*border-radius: 15px;*/
+}
+
+.rounded-right {
+    /*border-radius: 0 15px 15px 0;*/
+}
+
 .preview__content {
     position: absolute;
     top: 0;
@@ -251,9 +261,7 @@
     height: 100%;
     border-radius: inherit;
 }
-
-/* Portfolio Content */
-
+/* Content */
 .content {
     position: fixed;
     z-index: 1000;
@@ -345,6 +353,7 @@
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
+
 
 /**************************/
 /* All synced transitions */

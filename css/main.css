@@ -1,3 +1,4 @@
+
 .container {
     position: relative;
     overflow: hidden;
@@ -72,19 +73,6 @@
     text-align: center;
 }
 
-.container {
-    position: relative;
-    overflow: hidden;
-    overflow-y: scroll;
-    width: 100%;
-    height: 100%;
-    -webkit-overflow-scrolling: touch;
-}
-
-.noscroll .container {
-    overflow-y: hidden;
-}
-
 .slider {
     position: relative;
     z-index: 200;
@@ -118,7 +106,7 @@
 
 .slide__mover {
     position: relative;
-    z-index: 100;
+    z-index: 100;   
 }
 
 .slide__title {
@@ -146,13 +134,13 @@
 
 .button {
     font-size: 1.31em;
+    color: #4b5f5a;
     position: relative;
     display: inline-block;
     overflow: hidden;
     margin: 0 25px;
     padding: 0;
     cursor: pointer;
-    color: #5c5edc;
     border: none;
     background: none;
 }
@@ -162,7 +150,7 @@
 }
 
 .button:hover {
-    color: #fff;
+    color: #000080; 
 }
 
 .text-hidden {
@@ -201,7 +189,7 @@
     align-items: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: center;  
 }
 
 .zoomer__image {
@@ -226,33 +214,16 @@
 }
 
 .zoomer__area--size-1 {
-    /* Apple Watch */
-    width: 96px;
-    height: 118px;
+    /* iPhone */
+    width: 632px;
+    height: 358px;
 }
 
 .zoomer__area--size-2 {
     /* iPhone */
-    width: 112px;
-    height: 198px;
-}
-
-.zoomer__area--size-3 {
-    /* MacBook */
-    width: 315px;
-    height: 200px;
-}
-
-.zoomer__area--size-4 {
-    /* iPad */
-    width: 150px;
-    height: 200px;
-}
-
-.zoomer__area--size-5 {
-    /* iMac */
-    width: 315px;
-    height: 189px;
+    width: 632px;
+    height: 358px;
+    outline: 1px solid red;
 }
 
 .preview {
@@ -272,14 +243,6 @@
     transform: translate3d(100%,0,0);
 }
 
-.rounded {
-    border-radius: 15px;
-}
-
-.rounded-right {
-    border-radius: 0 15px 15px 0;
-}
-
 .preview__content {
     position: absolute;
     top: 0;
@@ -288,7 +251,9 @@
     height: 100%;
     border-radius: inherit;
 }
-/* Content */
+
+/* Portfolio Content */
+
 .content {
     position: fixed;
     z-index: 1000;
@@ -323,7 +288,6 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-
 }
 
 .content__item--current {
@@ -381,7 +345,6 @@
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-
 
 /**************************/
 /* All synced transitions */

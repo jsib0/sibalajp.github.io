@@ -224,10 +224,15 @@
 }
 
 .zoomer__area--size-3 {
-        width: 632px;
+    width: 632px;
     height: 358px;
 }
+
+.zoomer__area--size-4 {
+    width: 632px;
+    height: 358px;
 }
+
 
 .preview {
     overflow: hidden;

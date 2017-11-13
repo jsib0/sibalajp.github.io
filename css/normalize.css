@@ -13,6 +13,7 @@ html {
   line-height: 1.15; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  outline: 2px solid blue;
 }
 
 /* Sections
@@ -23,6 +24,7 @@ html {
  */
 
 body {
+  padding: 0;
   margin: 0;
 }
 

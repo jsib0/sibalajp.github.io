@@ -6,129 +6,227 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
-	<link rel="stylesheet" type="text/css" href="./css/demo.css">
+	<link rel="icon" type="image/png href="./images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
-	<link rel="stylesheet" type="text/css" href="./fonts/feather/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
-	<script src="./js/modernizr.custom.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Monoton|Raleway:500" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/helper.css">
+	<link rel="stylesheet" type="text/css" href="./css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ 
 </head>
 <body>
 	<div class="container">
-		<div id="large-header" class="large-header">
-			<canvas id="demo-canvas"></canvas>
-		</div>	
-		<div class="profile-pic"></div>
-		<div class="head-info">
-			<h1>Jon Sibala</h1>
-			<p>Full Stack Developer & Programmer</p>
-			<ul>
-			<li><a href="https://github.com/sibalajp">GitHub</a></li>
-			<li><a href="https://www.linkedin.com/in/jon-sibala-735aa447/">LinkedIn</a></li>
-			<li><a href="./images/jon_sibala_resume.pdf">Resume</a></li>
-			</ul>
-			<p>Phone: (818) 731-1033 <br> Email: sibalajp@gmail.com</p>
-		</div>
-		<div class="gallery_head">
-			<h2>Gallery</h2>
-		</div>
-		<section class="slider">
-			<div class="slide slide--current" data-content="content-1">
-				<div class="slide__mover">
-					<div class="zoomer flex-center">
-						<img class="zoomer__image" src="./images/tutor_me.png" alt="Tutor Me" />
-						<div class="preview">
-							<img src="./images/tutor_me.png" alt="Tutor Me Preview" />
-							<div class="zoomer__area zoomer__area--size-1"></div>	
-						</div>
-					</div>
-				</div>
-				<h2 class="slide__title"><span>Tutoring Company</span> Tutor Me</h2>
-			</div>
-			<div class="slide" data-content="content-2">
-				<div class="slide__mover">
-					<div class="zoomer flex-center">
-						<img class="zoomer__image" src="./images/blue_monkey_bar.png" alt="Gastropub" />
-						<div class="preview">
-							<img src="./images/blue_monkey_bar.png" alt="Blue Monkey Grill Preview" />
-							<div class="zoomer__area zoomer__area--size-2"></div>	
-						</div>
-					</div>
-				</div>
-				<h2 class="slide__title"><span>Gastropub</span> Blue Monkey Grill</h2>
-			</div>
-			<div class="slide" data-content="content-3">
-				<div class="slide__mover">
-					<div class="zoomer flex-center">
-						<img class="zoomer__image" src="./images/soundhub.png" alt="SoundHub" />
-						<div class="preview">
-							<img src="./images/soundhub.png" alt="SoundHub preview" />
-							<div class="zoomer__area zoomer__area--size-3"></div>
-						</div>
-					</div>
-				</div>
-				<h2 class="slide__title"><span>Music App</span> SounHub</h2>
-			</div>
-			<div class="slide" data-content="content-4">
-				<div class="slide__mover">
-					<div class="zoomer flex-center">
-						<img class="zoomer__image" src="./images/under-development.jpg" alt="Under Development" />
-						<div class="preview">
-							<img src="./images/under-development.jpg" alt="Under development" />
-							<div class="zoomer__area zoomer__area--size-4"></div>
-						</div>
-					</div>
-				</div>
-				<h2 class="slide__title"><span>Business Website</span>Unicorn Company</h2>
-			</div>
-			<nav class="slider__nav">
-				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
-				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
-				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
-			</nav>
-		</section>
-		<section class="content">
-			<div class="content__item" id="content-1">
-				<img class="content__item-img rounded-right" src="./images/tutor_me.png" alt="Tutor Me" />
-				<div class="content__item-inner">
-					<h2>Tutor Me</h2>
-					<p>MEAN based project designed for business content. A fully responsive website that showcases technologies such as jQuery, Masonry and the use of Yarn vs npm. </p>
-					<p><a href="http://54.186.113.241//">Checkout website &xrarr;</a></p>
-				</div>
-			</div>
-			<div class="content__item" id="content-2">
-				<img class="content__item-img rounded-right" src="./images/blue_monkey_bar.png" alt="Blue Monkey Content" />
-				<div class="content__item-inner">
-					<h2>Blue Monkey Grill</h2>
-					<p>Angular 4 based project that was inspired from a desire to increase my knowledge in working with Angular 4, jQuery, CSS-based animations, and responsive design. </p>
-					<p><a href="http://54.191.254.247/">Checkout website &xrarr;</a></p>
-				</div>
-			</div>
-			<div class="content__item" id="content-3">
-				<img class="content__item-img rounded-right" src="./images/soundhub.png" alt="Soundhub Content" />
-				<div class="content__item-inner">
-					<h2>SoundHub</h2>
-					<p>A replica of music apps such as Spotify and Pandora, SoundHub is capable of searching, playing and adding personal favorites onto user profile. Technologies used: Ruby on Rails, Spotify API, PostgresSQL. *Group project</p>
-					<p><a href="https://github.com/ISAACLA/Soundhub.git">Review code on GitHub &xrarr;</a></p>
-				</div>
-			</div>
-			<div class="content__item" id="content-4">
-				<img class="content__item-img rounded-right" src="./images/under-development.jpg" alt="Under Developmet" />
-				<div class="content__item-inner">
-					<h2>Unicorn Company</h2>
-					<p>This will be an e-commerce project using ReactJS as the framework. The goal is to futher my knowledge with ReactJS and have a good handling in both Angular 4 and ReactJS.</p>
-				</div>
-			</div>
-			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
-		</section>
+		<header>
+		 	<a id="head" href="http://www.jonsibala.com/"><p><img  class="usmc-emblem" src="./images/ega.png" alt=""></p></a>	    
+		 	<h1 class="portfolio-header">portfolio</h1>
+		</header><!-- end header -->
+		<nav class="circle-container blue circle-behind">
+			<a href="#landing-pages">Websites & Web Apps</a>
+			<a href="#languages">My Skills</a>
+			<a href="#contact">Contact</a>
+		 </nav>
+	    <section id="landing-pages" class="cf">
+	      <button class="header">Websites &amp; Web Apps</button><br/>
+
+	      <div class="sample-box">
+	        <a href="http://54.186.113.241/">
+	          <div class="img-container khaki">
+	            <img src="images/tutor_me.png" alt="">
+	            <div class="img-mask"><i class="pe-7s-notebook pe-5x pe-va"></i></div>
+	          </div>
+	        </a>
+	        <div class="sample-description">
+	          <h3>TUTOR ME</h3>
+	          <p>A Sample Tutoring Website</p>
+	          <div class="sample-footer">
+	            <a href="https://github.com/sibalajp/tutor_me" target="_blank" title="Github"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
+	            <a href="" title="Youtube" class="disabled" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+	            <a href="http://54.186.113.241/" title="Demo" target="_blank"><i class="fa fa-rocket fa-lg" aria-hidden="true"></i></a>
+	          </div>
+	        </div>
+	      </div>
+
+	      <div class="sample-box">
+	        <a href="http://54.191.254.247/dashboard" target="_blank">
+	          <div class="img-container l-blue">
+	            <img src="images/blue_monkey.png" alt="">
+	            <div class="img-mask"><i class="pe-7s-wine pe-5x pe-va"></i></div>
+	          </div>
+	        </a>
+	        <div class="sample-description">
+	          <h3>BLUE MONKEY</h3>
+	          <p>A Sample Bar Website</p>
+	          <div class="sample-footer">
+	            <a href="" target="_blank" title="Github" class="Github"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
+	            <a href="" title="Youtube" class="disabled" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+	            <a href="https://github.com/sibalajp/blue_monkey_" title="Demo"target="_blank"><i class="fa fa-rocket fa-lg" aria-hidden="true"></i></a>
+	          </div>
+	        </div>
+	      </div>
+
+	      <div class="sample-box">
+	        <a href="http://54.191.254.247/dashboard" target="_blank">
+	          <div class="img-container orangy">
+	            <img src="images/soundhub.png" alt="">
+	            <div class="img-mask"><i class="pe-7s-music pe-5x pe-va"></i></div>
+	          </div>
+	        </a>
+	        <div class="sample-description">
+	          <h3>SOUNDHUB</h3>
+	          <p>A music application</p>
+	          <div class="sample-footer">
+	            <a href="https://github.com/sibalajp/Soundhub" target="_blank" title="Github"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
+	            <a href="" title="Youtube" class="disabled" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+	            <a href="" title="Demo" class="disabled" target="_blank"><i class="fa fa-rocket fa-lg" aria-hidden="true"></i></a>
+	          </div>
+	        </div>
+	      </div>
+	    </section><!-- end landing-pages -->
+		<section id="languages" class="cf">
+		  <button class="header">My Skills</button><br/>
+		  <div class="languages-wrapper cf">
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-html5-plain"></i>
+		        <h5>html</h5>
+		      </div>
+		    </div>
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-css3-plain"></i>
+		        <h5>css</h5>
+		      </div>
+		    </div>
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-javascript-plain"></i>
+		        <h5>Javascript</h5>
+		      </div>
+		    </div>
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-jquery-plain"></i>
+		        <h5>jquery</h5>
+		      </div>
+		    </div>
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-nodejs-plain"></i>
+		        <h5>node</h5>
+		      </div>
+		    </div>
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-angularjs-plain"></i>
+		        <h5>angular</h5>
+		      </div>
+		    </div>
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-react-original"></i>
+		        <h5>reactjs</h5>
+		      </div>
+		    </div>
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-express-original"></i>
+		        <h5>express</h5>
+		      </div>
+		    </div>
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-mongodb-plain"></i>
+		        <h5>mongodb</h5>
+		      </div>
+		    </div>
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-ruby-plain"></i>
+		        <h5>ruby</h5>
+		      </div>
+		    </div>
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-rails-plain"></i>
+		        <h5>rails</h5>
+		      </div>
+		    </div>
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-python-plain"></i>
+		        <h5>python</h5>
+		      </div>
+		    </div>
+
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-django-plain"></i>
+		        <h5>django</h5>
+		      </div>
+		    </div>
+
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-mysql-plain"></i>
+		        <h5>Mysql</h5>
+		      </div>
+		    </div>
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-git-plain"></i>
+		        <h5>Git</h5>
+		      </div>
+		    </div>
+
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-sass-original"></i>
+		        <h5>sass</h5>
+		      </div>
+		    </div>
+
+		    <div class="language-container">
+		      <div class="language-box khaki">
+		        <i class="devicon-bootstrap-plain"></i>
+		        <h5>bootstrap</h5>
+		      </div>
+		    </div>
+
+		  </div><!-- end of languages-wrapper -->
+
+		</section><!-- end languages -->
+	
+		<div class="top-button cf"><a href="#head"><i class="pe-7s-angle-up pe-5x pe-va"></i></a></div>
+
+		<footer id="contact" class="cf">
+		  <p>
+		    <a href="./images/jon_sibala_resume.pdf"><button class="header">Resume</button></a>
+		    <a href="https://github.com/sibalajp" target="_blank"><button class="header">GITHUB <i class="fa fa-github fa-lg" aria-hidden="true"></i></button></a>
+		    <a href="https://www.linkedin.com/in/jon-sibala-735aa447/" target="_blank"><button class="header">LINKEDIN</button></a>
+		  </p>
+		</footer>
+	
 	</div> <!-- container  -->  
-	<!-- header -->
-	<script src="./js/TweenLite.min.js"></script>
-	<script src="./js/EasePack.min.js"></script>
-	<script src="./js/demo.js"></script>
-	<script src="./js/rAF.js"></script>
-	<!-- slider -->
-	<script src="./js/classie.js"></script>
-	<script src="./js/dynamics.min.js"></script>
-	<script src="./js/main.js"></script>
+
+	<script src="js/portfolio.js"></script>
 </body>
 </html>

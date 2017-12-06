@@ -172,6 +172,14 @@ nav a:hover:before {
   background-color: #C5E1E5;
 }
 
+.l-purp {
+  background-color: #C0E1F7;        
+}
+
+.aspen {
+  background-color: #F7F7E0;
+}
+
 /* Image info */
 
 .img-mask {
@@ -364,18 +372,21 @@ footer p, a, button, i {
 }
 
 footer button.header {
+  border-radius: 5px;
   display: inline-block;
   font-size: x-small;
   margin: 1.5% 1.5%;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border: 2px solid #5B1A23;
+  background-color: #D9B23B;
 }
 
 footer button.header:hover {
-  border: 2px solid #345;
+  border: 2px solid white;
   color: #345;
-  background: #C5E1E5;
+  background: #85bb65;
 }
 
 

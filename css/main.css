@@ -176,6 +176,10 @@ nav a:hover:before {
   background-color: #C0E1F7;        
 }
 
+.c-bronze {
+  background-color: #DAB38A;
+}
+
 .aspen {
   background-color: #F7F7E0;
 }
@@ -324,7 +328,6 @@ nav a:hover:before {
 
 #landing-pages {
   max-width: 90%;
-
 }
 
 #landing-pages .img-container img {

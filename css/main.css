@@ -325,6 +325,17 @@ nav a:hover:before {
 }
 
 /* ********* Landing Pages Section ********** */
+#web-apps {
+  max-width: 90%;
+}
+
+#web-apps .img-container img {
+  max-width: 100%;
+}
+
+#web-apps .sample-description {
+  min-height: 180px;
+}
 
 #landing-pages {
   max-width: 90%;
